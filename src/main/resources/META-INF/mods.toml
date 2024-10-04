@@ -6,7 +6,7 @@ license="${mod_license}"
 modId="mekanismscience"
 version="1.0"
 displayName="Mekanism: Science"
-authors="FixedDolphin927"
+authors="FixedDolphin927, code-onigiri"
 
 description='''${mod_description}'''
 [[dependencies.mekanismscience]]
