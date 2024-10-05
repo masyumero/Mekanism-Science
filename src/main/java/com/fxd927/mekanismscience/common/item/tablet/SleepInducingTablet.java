@@ -22,17 +22,17 @@ public class SleepInducingTablet extends Item {
         if (!level.isClientSide && entity instanceof Player) {
             Player player = (Player) entity;
 
-            MobEffectInstance currentEffect = player.getEffect(MSEffects.GOOD_SLEEP.get());
+            //MobEffectInstance currentEffect = player.getEffect(MSEffects.GOOD_SLEEP.get());
             player.getCooldowns().addCooldown(this,12000);
 
             int newDuration;
-            if (currentEffect != null) {
-                newDuration = currentEffect.getDuration() + BASE_DURATION;
-            } else {
-                newDuration = BASE_DURATION;
-            }
+            //if (currentEffect != null) {
+            //newDuration = currentEffect.getDuration() + BASE_DURATION;
+            //} else {
+            //newDuration = BASE_DURATION;
+            //}
 
-            player.addEffect(new MobEffectInstance(MSEffects.GOOD_SLEEP.get(), newDuration, 0));
+            //player.addEffect(new MobEffectInstance(MSEffects.GOOD_SLEEP.get(), newDuration, 0));
         }
         return super.finishUsingItem(stack, level, entity);
     }

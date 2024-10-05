@@ -115,18 +115,18 @@ public class TileEntityOrganicLiquidExtractor extends TileEntityConfigurableMach
         List<Entity> nearbyEntities = this.getLevel().getEntitiesOfClass(Entity.class, new AABB(this.getBlockPos()).inflate(2)); // 半径5ブロック内のモブを探す
         FluidStack fluidToGenerate = FluidStack.EMPTY;
 
-        for (Entity entity : nearbyEntities) {
-            if (entity instanceof Cow || entity instanceof Goat) {
-                fluidToGenerate = new FluidStack(MSFluids.MILK.getFluid(), 100); // 牛ならミルクを生成
-                break; // 牛がいた場合、それ以上探す必要はない
-            } else if (entity instanceof Pufferfish) {
-                fluidToGenerate = new FluidStack(MSFluids.TETRODOTOXIN.getFluid(), 100); // フグなら毒を生成
-                break; // フグがいた場合、それ以上探す必要はない
-            } else if (entity instanceof Phantom) {
-                fluidToGenerate = new FluidStack(MSFluids.BENZODIAZEPINE.getFluid(), 100); // フグなら毒を生成
-                break;
-            }
-        }
+        //for (Entity entity : nearbyEntities) {
+        //if (entity instanceof Cow || entity instanceof Goat) {
+        //fluidToGenerate = new FluidStack(MSFluids.MILK.getFluid(), 100); // 牛ならミルクを生成
+        //break; // 牛がいた場合、それ以上探す必要はない
+        //} else if (entity instanceof Pufferfish) {
+        //fluidToGenerate = new FluidStack(MSFluids.TETRODOTOXIN.getFluid(), 100); // フグなら毒を生成
+        //break; // フグがいた場合、それ以上探す必要はない
+        //} else if (entity instanceof Phantom) {
+        //fluidToGenerate = new FluidStack(MSFluids.BENZODIAZEPINE.getFluid(), 100); // フグなら毒を生成
+        //break;
+        //}
+        //}
 
         if (!fluidToGenerate.isEmpty()) {
             energySlot.fillContainerOrConvert();

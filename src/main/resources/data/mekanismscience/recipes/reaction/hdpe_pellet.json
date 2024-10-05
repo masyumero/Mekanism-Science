@@ -1,0 +1,32 @@
+{
+  "type":"mekanism:reaction",
+  "duration":90,
+  "energyRequired":1000,
+  "fluidInput":
+  {
+    "amount":50,
+    "tag":"forge:ethene"
+  },
+  "gasInput":
+  {
+    "amount":1000,
+    "gas":"mekanismscience:yttrium"
+  },
+  "itemInput":
+  {
+    "ingredient":
+    {
+      "item":"mekanism:substrate"
+    }
+  },
+  "itemOutput":
+  {
+    "amount":3,
+    "item":"mekanism:hdpe_pellet"
+  },
+  "gasOutput":
+  {
+    "amount":1000,
+    "gas":"mekanismscience;yttrium"
+  }
+}

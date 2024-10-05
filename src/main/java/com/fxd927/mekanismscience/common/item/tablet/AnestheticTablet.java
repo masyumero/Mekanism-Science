@@ -19,7 +19,7 @@ public class AnestheticTablet extends Item {
         if (!level.isClientSide && entity instanceof Player) {
             Player player = (Player) entity;
 
-            player.addEffect(new MobEffectInstance(MSEffects.SENSORY_PARALYSIS.get(),600,0));
+            //player.addEffect(new MobEffectInstance(MSEffects.SENSORY_PARALYSIS.get(),600,0));
             player.getCooldowns().addCooldown(this,9000);
 
             long invulnerableEndTime = player.level().getGameTime() + 600;
