@@ -27,6 +27,6 @@
   "gasOutput":
   {
     "amount":1000,
-    "gas":"mekanismscience;yttrium"
+    "gas":"mekanismscience:yttrium"
   }
 }
