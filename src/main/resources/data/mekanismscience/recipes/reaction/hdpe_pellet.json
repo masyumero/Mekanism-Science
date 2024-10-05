@@ -1,6 +1,6 @@
 {
   "type":"mekanism:reaction",
-  "duration":90,
+  "duration":60,
   "energyRequired":1000,
   "fluidInput":
   {
@@ -9,24 +9,19 @@
   },
   "gasInput":
   {
-    "amount":1000,
-    "gas":"mekanismscience:yttrium"
+    "amount":10,
+    "gas":"mekanism:oxygen"
   },
   "itemInput":
   {
     "ingredient":
     {
-      "item":"mekanism:substrate"
+      "item":"mekanismscience:dust_yttrium"
     }
   },
   "itemOutput":
   {
-    "amount":3,
+    "count":3,
     "item":"mekanism:hdpe_pellet"
-  },
-  "gasOutput":
-  {
-    "amount":1000,
-    "gas":"mekanismscience:yttrium"
   }
 }

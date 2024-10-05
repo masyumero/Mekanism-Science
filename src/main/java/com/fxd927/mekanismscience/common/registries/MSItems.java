@@ -13,6 +13,7 @@ public class MSItems {
     //public static final ItemRegistryObject<Item> NEUTRON_SOURCE_PELLET = ITEMS.register("pellet_neutron_source", () -> new NeutronSourcePellet(new Item.Properties(), EnumColor.YELLOW));
     //public static final ItemRegistryObject<Item> HIGH_DENSITY_NEUTRON_SOURCE_PELLET = ITEMS.register("pellet_high-density_neutron_source", () -> new HighDensityNeutronSourcePellet(new Item.Properties(), EnumColor.PURPLE));
     public static final ItemRegistryObject<Item> DUST_CALCIUM_OXIDE = ITEMS.register("dust_calcium_oxide");
+    public static final ItemRegistryObject<Item> DUST_YTTRIUM = ITEMS.register("dust_yttrium");
     //public static final ItemRegistryObject<Item> REFINED_CALIFORNIUM_INGOT = ITEMS.register("ingot_refined_californium", EnumColor.ORANGE);
     //public static final ItemRegistryObject<Item> EXCIPIENT = ITEMS.register("excipient");
     //public static final ItemRegistryObject<Item> TABLET_ANESTHETIC = ITEMS.register("tablet_anesthetic", () -> new AnestheticTablet(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).saturationMod(0.0F).build())));
