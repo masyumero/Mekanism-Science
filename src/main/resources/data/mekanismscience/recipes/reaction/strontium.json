@@ -1,6 +1,6 @@
 {
   "type":"mekanism:reaction",
-  "duration":200,
+  "duration":50,
   "energyRequired":10000,
   "fluidInput":
   {

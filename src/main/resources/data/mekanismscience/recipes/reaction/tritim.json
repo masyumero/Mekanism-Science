@@ -1,7 +1,7 @@
 {
   "type":"mekanism:reaction",
-  "duration":200,
-  "energyRequired":10000,
+  "duration":50,
+  "energyRequired":1000,
   "fluidInput":
   {
     "amount":1000,
