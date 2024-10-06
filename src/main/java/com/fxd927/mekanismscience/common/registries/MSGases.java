@@ -11,11 +11,11 @@ import mekanism.common.registration.impl.GasRegistryObject;
 public class MSGases {
     public static final GasDeferredRegister GASES = new GasDeferredRegister(MekanismScience.MODID);
 
-    //public static final GasRegistryObject<Gas> AMERICIUM;
+    public static final GasRegistryObject<Gas> AMERICIUM;
     //public static final GasRegistryObject<Gas> AMMONIA;
     //public static final GasRegistryObject<Gas> BENZODIAZEPINE;
     //public static final GasRegistryObject<Gas> BROMINE;
-    //public static final GasRegistryObject<Gas> BERYLLIUM;
+    public static final GasRegistryObject<Gas> BERYLLIUM;
     //public static final GasRegistryObject<Gas> CALIFORNIUM;
     //public static final GasRegistryObject<Gas> CHLOROMETHANE;
     //public static final GasRegistryObject<Gas> CONCENTRATED_SEAWATER;
@@ -34,11 +34,11 @@ public class MSGases {
     public static final GasRegistryObject<Gas> YTTRIUM;
 
     static {
-        //AMERICIUM = GASES.register("americium", 13983840, new GasAttributes.Radiation(0.05));
+        AMERICIUM = GASES.register("americium", 13983840, new GasAttributes.Radiation(0.05));
         //AMMONIA = GASES.register(MSChemicalConstants.AMMONIA);
         //BENZODIAZEPINE = GASES.register(MSChemicalConstants.BENZODIAZEPINE);
         //BROMINE = GASES.register(MSChemicalConstants.BROMINE);
-        //BERYLLIUM = GASES.register(MSChemicalConstants.BERYLLIUM);
+        BERYLLIUM = GASES.register(MSChemicalConstants.BERYLLIUM);
         //CALIFORNIUM = GASES.register("californium", 0xFFF08B00, new GasAttributes.Radiation(0.1));
         //CHLOROMETHANE = GASES.register(MSChemicalConstants.CHLOROMETHANE);
         //CONCENTRATED_SEAWATER = GASES.register(MSChemicalConstants.CONCENTRATED_SEAWATER);

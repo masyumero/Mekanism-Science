@@ -1,0 +1,30 @@
+{
+  "type":"mekanism:reaction",
+  "duration":50,
+  "fluidInput":
+  {
+    "amount":1000,
+    "fluid":"minecraft:water"
+  },
+  "gasInput":
+  {
+    "amount":1000,
+    "gas":"mekanism:plutonium"
+  },
+  "gasOutput":
+  {
+    "amount":3000,
+    "gas":"mekanismscience:americium"
+  },
+  "itemInput":
+  {
+    "ingredient":
+    {
+      "item":"mekanismscience:pellet_neutron_source"
+    }
+  },
+  "itemOutput":
+  {
+    "item":"mekanism:dust_steel"
+  }
+}
