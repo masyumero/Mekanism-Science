@@ -61,7 +61,6 @@ public class MSGases {
     }
 
     public static class Coolants{
-        // MekanismScience のコンストラクターで呼び出される
         public static void init(){
             setHeliumCoolantConductivity();
             setSuperheatedHeliumCoolantConductivity();
@@ -76,22 +75,5 @@ public class MSGases {
         public static void setSuperheatedHeliumCoolantConductivity() {
             ((CoolantAccessor) HEATED_HELIUM_COOLANT).setConductivity(1.5);
         }
-
-          // 発展型
-          // MekanismScience のコンストラクターでの MSGases.Coolants.init() の呼び出しを使用せずに、GasAttributes.Coolant のインスタンスを作成する方法
-//        public static final GasAttributes.CooledCoolant HELIUM_COOLANT = makeCoolant(GasAttributes.CooledCoolant::new, () -> SUPERHEATED_HELIUM.get(), 100, 1.5);
-//        public static final GasAttributes.HeatedCoolant HEATED_HELIUM_COOLANT = makeCoolant(GasAttributes.HeatedCoolant::new, () -> SUPERHEATED_HELIUM.get(), 100, 1.5);
-
-          // 関数型インターフェイスとジェネリクスを用いて、GasAttributes.Coolantを継承するクラスのコンストラクターを引数に渡すために
-//        @FunctionalInterface
-//        private interface CoolantFactory<C extends GasAttributes.Coolant> {
-//            C create(IGasProvider heatedGas, double thermalEnthalpy, double conductivity);
-//        }
-
-//        private static <C extends GasAttributes.Coolant> C makeCoolant(CoolantFactory<C> factory, IGasProvider heatedGas, double thermalEnthalpy, double conductivity) {
-//            var coolant = factory.create(heatedGas, thermalEnthalpy, 1.0);
-//            ((CoolantAccessor) coolant).setConductivity(conductivity);
-//            return coolant;
-//        }
     }
 }

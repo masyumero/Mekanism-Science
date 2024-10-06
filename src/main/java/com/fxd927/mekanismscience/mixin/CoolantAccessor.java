@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(value = GasAttributes.Coolant.class, remap = false)
 public interface CoolantAccessor {
-    @Mutable // 元のフィールドがfinalの場合に使用すると無視して書き換えられるようになる
+    @Mutable
     @Accessor
     void setConductivity(double conductivity);
 }
