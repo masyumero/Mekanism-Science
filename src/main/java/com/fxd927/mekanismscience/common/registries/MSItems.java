@@ -1,5 +1,6 @@
 package com.fxd927.mekanismscience.common.registries;
 
+import com.fxd927.mekanismscience.common.MSCreativeTab;
 import com.fxd927.mekanismscience.common.MekanismScience;
 import com.fxd927.mekanismscience.common.item.NeutronSourcePellet;
 import com.fxd927.mekanismscience.common.item.tablet.*;
@@ -12,7 +13,7 @@ import net.minecraft.world.item.Item;
 public class MSItems {
     public static final ItemDeferredRegister ITEMS = new ItemDeferredRegister(MekanismScience.MODID);
 
-    public static final ItemRegistryObject<Item> NEUTRON_SOURCE_PELLET = ITEMS.register("pellet_neutron_source", () -> new NeutronSourcePellet(new Item.Properties(), EnumColor.YELLOW));
+    public static final ItemRegistryObject<Item> NEUTRON_SOURCE_PELLET = ITEMS.register("pellet_neutron_source", () -> new NeutronSourcePellet(new Item.Properties().tab(MSCreativeTab.MEKANISM_SCIENCE), EnumColor.YELLOW));
     //public static final ItemRegistryObject<Item> HIGH_DENSITY_NEUTRON_SOURCE_PELLET = ITEMS.register("pellet_high-density_neutron_source", () -> new HighDensityNeutronSourcePellet(new Item.Properties(), EnumColor.PURPLE));
     public static final ItemRegistryObject<Item> DUST_CALCIUM_OXIDE = ITEMS.register("dust_calcium_oxide");
     //public static final ItemRegistryObject<Item> DUST_YTTRIUM = ITEMS.register("dust_yttrium");

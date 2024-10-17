@@ -37,4 +37,5 @@ public class NeutronSourcePellet extends Item{
     public Component getName(ItemStack stack) {
         return TextComponentUtil.build(this.color, super.getName(stack));
     }
+
 }

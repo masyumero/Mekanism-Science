@@ -26,14 +26,14 @@ public enum MSChemicalConstants implements IChemicalConstant {
 
     private final String name;
     private final int color;
-    private final int lightLevel;
+    private final int Luminosity;
     private final float temperature;
     private final float density;
 
-    MSChemicalConstants(String name,int color,int lightLevel,float temperature,float density){
+    MSChemicalConstants(String name,int color,int Luminosity,float temperature,float density){
         this.name = name;
         this.color = color;
-        this.lightLevel = lightLevel;
+        this.Luminosity = Luminosity;
         this.temperature = temperature;
         this.density = density;
     }
@@ -49,11 +49,6 @@ public enum MSChemicalConstants implements IChemicalConstant {
     }
 
     @Override
-    public int getLightLevel() {
-        return lightLevel;
-    }
-
-    @Override
     public float getTemperature() {
         return temperature;
     }
@@ -62,6 +57,9 @@ public enum MSChemicalConstants implements IChemicalConstant {
     public float getDensity() {
         return density;
     }
+
+    @Override
+    public int getLuminosity() {return Luminosity;}
 
 }
 

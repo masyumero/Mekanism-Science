@@ -27,7 +27,6 @@ public class MekanismScience
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MSConfig.registerConfigs(ModLoadingContext.get());
-        MSCreativeTab.CREATIVE_TABS.register(modEventBus);
         MSFluids.FLUIDS.register(modEventBus);
         MSGases.GASES.register(modEventBus);
         MSItems.ITEMS.register(modEventBus);

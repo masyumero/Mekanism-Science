@@ -12,7 +12,7 @@ public class RadiationResistance extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        entity.getCapability(Capabilities.RADIATION_ENTITY).ifPresent(radiationEntity -> {
+        entity.getCapability(Capabilities.RADIATION_ENTITY_CAPABILITY).ifPresent(radiationEntity -> {
             radiationEntity.set(0);
         });
     }
