@@ -1,4 +1,6 @@
 {
+  "itemGroup.mekanism_science": "Mekanism: Science",
+
   "advancements.mekanismscience.californium.description": "Refine Californium, the element with the highest atomic number that has practical applications",
   "advancements.mekanismscience.californium.title": "The Reach of Science",
   "advancements.mekanismscience.neutron_source.description": "Make Neutron Source Pellet from Americium and Plutonium, and hold",

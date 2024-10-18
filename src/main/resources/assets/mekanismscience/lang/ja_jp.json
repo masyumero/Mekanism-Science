@@ -1,4 +1,6 @@
 {
+  "itemGroup.mekanism_science": "Mekanism: Science",
+
   "advancements.mekanismscience.californium.description": "実用的な用途がある最も原子番号の大きい元素であるカリホルニウムを精製する",
   "advancements.mekanismscience.californium.title": "科学の到達点",
   "advancements.mekanismscience.neutron_source.description": "アメリシウムとベリリウムから中性子源ペレットを作り、持つ",
